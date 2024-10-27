@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="profile-container">
+        <div class="container" id="about-container">
+            <header>
+                <img id="profile-picture" src="foto.jpg" alt="foto profil saya">
+                <h1>tentang saya</h1>
+            </header>
+            <section id="tentang saya">
+                <p>Saya adalah mahasiswa angkatan 2023 dengan prodi sistem informasi dengan nomor "Nim"= 2300016108, asal saya Sumatra Selatan.</p>
+            </section>
+        </div>
+    
+        <div class="container" id="dynamic-container">
+            <section id="control-panel">
+                <h2>Dynamic Page Appearance</h2>
+                <label for="bg-color">Change Background Color:</label>
+                <select id="bg-color">
+                    <option value="white">White</option>
+                    <option value="lightgray">Light Gray</option>
+                    <option value="lightblue">Light Blue</option>
+                    <option value="lightgreen">Light Green</option>
+                </select>
+                <br><br>
+    
+                <label for="font-size">Change Font Size:</label>
+                <input type="range" id="font-size" min="12" max="24" value="16">
+                <span id="font-size-value">16px</span>
+                <br><br>
+    
+                <button id="dark-mode-toggle">Toggle Dark Mode</button>
+                <br><br>
+    
+                <label for="font-style">Change Font Style:</label>
+                <select id="font-style">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Georgia">Georgia</option>
+                </select>
+            </section>
+        </div>
+    
+        <div class="container" id="todo-container">
+            <section id="my-todo-list">
+                <h2>My To-Do List</h2>
+                <form id="todo-form">
+                    <label for="course">Mata Kuliah:</label>
+                    <input type="text" id="course" placeholder="Masukkan nama mata kuliah" required>
+                    <label for="date">Tanggal:</label>
+                    <input type="date" id="date" required>
+                    <button type="submit">Add</button>
+                </form>
+                <ul id="todo-list"></ul>
+            </section>
+        </div>
+    </main>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
